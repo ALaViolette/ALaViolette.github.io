@@ -1,0 +1,185 @@
+/*Body*/
+body {
+    padding-top: 12em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;     
+/*    width: 850px;     */
+    margin: 0;     
+/*    border: 3px solid #1A2930;*/
+    background-color: #C5C1C0;   
+    font-size: 100%;
+    background-size: 650px;
+    vertical-align: middle;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; 
+    position: absolute;
+
+}
+
+
+
+header { padding: 2em 2em 2em 2em;
+    border-bottom: 3px solid;
+    background-color: #F7CE3E;
+    text-align: center;
+    color:white;
+    margin-bottom: -50px;
+    border-bottom-color: #F7CE3E;
+    border: 3px solid #1A2930;
+    position:fixed; 
+    top:0px; 
+    margin:auto; 
+    z-index:100000; 
+    width:100%;
+} 
+
+header h1{
+    font-size: 300%;
+    padding-bottom: -250em;
+    
+}
+
+
+
+header h3{
+  
+    margin-top: -2em;
+}
+
+section {
+padding: 0 20px 20px 20px;
+width: 800px; 
+float: left;
+text-align:left;
+
+} 
+section h1 {
+color: #1A2930; 
+font-size: 200%; 
+padding-top: .5em; 
+/*margin: .5em;*/
+}
+
+section p {
+padding-bottom: .5em;
+font-size: 104%;
+
+ 
+}
+
+/*home page image*/
+section img{
+    float: right; 
+    width:400px; 
+    height: auto;
+    margin: .5em 0 1em 1em; 
+    border: 3px solid black;
+}
+
+#sidePanel{
+position:fixed;  
+right:1%;
+width: 260px; 
+float: right; 
+padding-right: 20px;
+background-color: #0A1612;
+}
+
+
+/*navigation bar*/
+#nav_list ul{
+    list-style: none;
+    margin-right: -5em;
+    margin-bottom: 1.5em;
+}
+
+#nav_list li{
+    width: 200px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #C5C1C0; 
+}
+
+#nav_list li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em ;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+/*meetup html page*/
+.meet ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+.meet li a{
+    display: block;
+    padding: 16px;
+    color: #1A2930;:
+}
+
+.meet li a: visited{
+    color: blue;
+}
+
+.meet li a:hover{
+    color:lightcyan;
+}
+
+
+/*learn html page*/
+
+.program{
+    font-size: 200%;
+    margin-bottom: -1%;
+ 
+}
+
+
+a img{
+    float: left;
+    margin-right: 10px;   
+}
+
+a img:hover{
+    border: 1px solid #F7CE3E ;
+}
+
+#tocome{
+     text-align: center;
+}
+
+
+/*contact us*/
+
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 500px;
+    border: 3px dashed;
+    padding: 12px;
+}
+
+
+label{
+    float: left;
+    width: 11em;
+    text-align: right;
+}
+
+footer{
+    border-top:  solid;
+    border-top-color: black;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C5C1C0;  
+  
+}

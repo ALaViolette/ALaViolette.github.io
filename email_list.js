@@ -1,0 +1,53 @@
+"use strict";
+
+// function is called $ and replaces document.getElementById in this script fileCreatedDate
+var $ = function(id) {
+	return document.getElementById(id);
+};  
+
+var joinList = function() {
+	var emailAddress1 = $("email_address1").value;
+	var emailAddress2 = $("email_address2").value;
+	var firstName = $("first_name").value;
+	var isValid = true;
+	
+	if(emailAddress1 == "") {
+		$("email_address1_error").firstChild.nodeValue = 
+			"This field is required.";
+		isValid = false;
+	} else {
+		$("email_address1_error").firstChild.nodeValue = "";
+	}
+	
+	if(emailAddress2 == "") {
+		$("email_address2_error").firstChild.nodeValue = 
+			"This field is required.";
+		isValid = false;
+	} else if (emailAddress1 != emailAddress2){
+		$("email_address2_error").firstChild.nodeValue = 
+			"Email addresses must match";
+		isValid = false;  // forgot this line!!!
+	} else {
+		$("email_address2_error").firstChild.nodeValue = "";
+	}
+	
+	if(firstName == "") {
+		$("first_name_error").firstChild.nodeValue = 
+			"Please enter first name.";
+		isValid = false;
+	} else {
+		$("first_name_error").firstChild.nodeValue = "";
+	}
+	
+	if (isValid) {
+		$("email_form").submit();
+	}
+};  // function joinList 
+// function is action, therefore ends with ;
+
+window.onload = function() {
+	$("join_list").onclick = joinList;
+	$("email_address1").focus();
+};
+
+
